@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    width: 100%;
+    
+    background: transparent;
+    color: black;
+    font-sizr: 50px;
+}
+
+.clock_main_class {position: fixed; 
+top: 30%; left: 80px;
+    display: block;
+    
+    width: 200px;
+    height: 200px;
+    
+}
+
+@media (min-width: 360px) { .clock_main_class{ top: 30%; left: 80px; }
+ 
+  
+  }
+  
+  
+  @media (min-width: 720px) { .clock_main_class{ top: 40%; left: 40%; }
+ 
+  
+  }
+ 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+.clock {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    background: url(svg/round_animation.svg);
+    background-size: cover;
+    
+    
+    border-radius: 55%;
+    
+}
+
+ .second_image{position: absolute; 
+z-index: 110;}
+
+
+.clock_face_image{position: absolute; 
+
+left: 2px; 
+bottom: 0.1px;
+z-index: 0;}
+
+
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: silver;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hour,
+.clock .minute,
+.clock .secind {
+    position: absolute;
+}
+
+.clock .hour, .h {
+    width: 110px;
+    height: 110px;
+}
+
+.clock .minute, .m {
+    width: 150px;
+    height: 150px;
+}
+
+.clock .second, .s {
+    width: 30px;
+    height: 30px;
+    
+    
+    
+}
+.h, .m, .s{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+.h:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    background: black;
+    z-index: 113;
+    border-radius: 6px 6px 0 0;
+}
+.m:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 70px;
+    background: brown;
+    z-index: 112;
+    border-radius: 6px 6px 0 0;
+}
+.s:before {
+
+    
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background: red;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
