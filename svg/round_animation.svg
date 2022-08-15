@@ -1,0 +1,45 @@
+<svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ 
+	<style>
+      #bar{ fill:  transparent;
+        stroke-width: 5;
+        stroke: url(#GradientColor);
+        stroke-dasharray: 565;
+        stroke-dashoffset: 0;
+         stroke-linecap: "round";
+        animation: heart_animation 5s linear 0s infinite;  }
+        
+         #bar2 { fill:  white;
+        stroke-width: 5;
+        stroke: #ddd;
+         stroke-linecap: "round";
+          }
+        
+      
+        @keyframes heart_animation{
+      100% {  stroke-dashoffset: 0;     }
+ }
+        
+        </style>
+            
+            
+            
+            <defs>
+            <linearGradient id="GradientColor">
+               <stop offset="0%" stop-color="#e91e63" />
+               <stop offset="50%" stop-color="brown" />
+               <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+            
+            
+         </defs>
+         
+              
+          <circle id="bar2" r="90" cx="100" cy="100" fill="white" stroke="#ddd" stroke-dasharray="565.48" stroke-dashoffset="0" stroke-width="5"></circle>
+            
+            <circle  id="bar" r="90" cx="100" cy="100"  fill="white" stroke-dasharray="565" stroke-dashoffset="565" stroke-width="5" stroke-linecap="round"></circle>
+            
+            
+              
+            </svg>
+            
